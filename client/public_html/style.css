@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    padding: 1.5%;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link{
+    color: black !important;
+    padding: 0 1rem 0 1rem;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+}
+.nav-item:hover{
+    background-color:#ee6e6e12 ;
+}
+.active {
+    border-bottom: 2px solid #ee6e73;
+    transition: background 1s;
+    
+}
+.myimage{
+    width: 500px;
+    height: 500px;
+}
+.description-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+}
+.card-text{
+    font-family: Poppins,sans-serif;
+    color: rgba(0,0,0,0.75);
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-info{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #56b838;
+}
+
+
+.carousel-item,img{
+    max-height: 600px;
+}
+
+ol{
+    list-style-position: inside;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 30vh;
+    background: black;
+    color: aliceblue;
+    /* font-size: 1.2rem; */
+    font-family: Poppins,sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+@media screen and (max-width:1064px){
+    .description-card{
+        flex-direction: column;
+    }
+    /* #contact-me{
+        flex-direction: column;
+        align-items: center;
+    } */
+    #contact-me > a{
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    #myvideo {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:680px){
+    #contact-me > a{
+        font-size: 0px;
+    }
+    #details-name{
+        display: none !important;
+        font-size: 0;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer-div{
+        margin-top: 50px;
+    }
+    #checkbox-container{
+        flex-direction: column;
+    }
+    #myvideo {
+        width:300px !important;
+    }
+}

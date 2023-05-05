@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./iitb.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/eb45f868cd.js" crossorigin="anonymous"></script>
+  <style>
+    #myvideo {
+      width: 800px;
+    }
+
+    #contact-me {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #contact-me>a {
+      color: black !important;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    #contact-me>a>i {
+      font-size: 1.2rem;
+      color: #f44336;
+    }
+
+    #carouselExampleDark {
+      width: 55%;
+      align-self: center;
+    }
+
+    .myquote {
+      font-family: Poppins, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- nav -->
+  <div class="navbar navbar-expand-lg navbar material-navbar">
+    <div class="container-fluid">
+      <img src="./iitb.png" width="60" height="60" class="me-4" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mt-2" id="navbarNav">
+        <ul class="navbar-nav ms-md-auto gap-2">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html"><i class="fa-regular fa-lightbulb me-2"></i>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html"><i class="fa-solid fa-graduation-cap me-2"></i>Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="hobbies.html"><i class="fa-solid fa-guitar me-2"></i>Hobbies</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html"><i class="fa-solid fa-comments me-2"></i>Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5 flex-column d-flex">
+    <!-- 1 Card -->
+    <main style="display:flex;justify-content:center;">
+      <div class="description-card" style="max-width: 85%;">
+        <img title="Abhishek Kumar Gupta" src="https://avatars.githubusercontent.com/u/45595749?v=4" alt="Abhishek"
+          class="img-thumbnail" id="myimage" width="300" />
+
+        <div class="m-3">
+          <h4>Abhishek Kumar Gupta</h4>
+          <p id="desc" style="font-size:11pt;">Hola Amigos! I'm Abhishek, a first-year master's student in Computer
+            Science and Engineering Department at IIT Bombay. I have started this journey to learn many new things and
+            contribute some worthwhile things to the field of Computer Science. I am interested in core computer science
+            domains and their integration with state-of-the-art Machine learning models. I have completed my under
+            graduation at IIT Tirupati.
+            Apart from studying, I also like to spend quality time with my friends and family. I love playing FPS games
+            like Valorant, but I am open to all PC Games, wheater it is a Heist with my buddies in GTA 5 or grounded
+            combat and fast-paced action in Call of Duty: Modern Warfare. After doing so much work, we need energy,
+            right? So, I love to try new cuisine at different places. Btw, I love Chicken Biryani and Butter Chicken. I
+            also like to listen to the music of various genres. </p>
+          <div class="blockquote text-center myquote">
+            "Sometimes music is the only thing that takes your mind off everything else."
+          </div>
+          <!-- <div id="details" style="display: flex;justify-content:space-between">
+            <span><i class="fa-solid fa-phone me-2"></i><span id="details-name">Contact:</span> 9431205113</span>
+            <span><i class="fa-solid fa-cake-candles me-2"></i><span id="details-name">Date of Birth:</span>
+              27-July-2000</span>
+          </div> -->
+          <div id="contact-me">
+            <a href="https://www.linkedin.com/in/iam-abhishek/" target="_blank"><i
+                class="fa-brands fa-linkedin me-2"></i>LinkedIn</a>
+            <a href="https://github.com/Satyam52" target="_blank"><i
+                class="fa-brands fa-square-github me-2"></i>Github</a>
+            <a href="https://www.instagram.com/iam__abhishekk_/" target="_blank"><i
+                class="fa-brands fa-square-instagram me-2"></i>Instagram</a>
+            <a href="https://www.facebook.com/satyam.gupta.1804109/" target="_blank"> <i
+                class="fa-brands fa-square-facebook me-2"></i>Facebook</a>
+            <a href="https://www.snapchat.com/add/mee_abhishekk?share_id=xEr0gBanKLk&locale=en-IN" target="_blank"><i
+                class="fa-brands fa-square-snapchat me-2"></i>Snapchat</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 2 My photos -->
+    <h1 class="display-5-bold text-center mt-5">Interesting images</h1>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mt-2" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./fish.png" w class="d-block w-100" alt="Fish">
+          <div class="carousel-caption d-none d-md-block">
+
+            <p style="color: white; font-family:Poppins;">3D image generated by DALL-E-2. If you look carefully
+              then you can see details are awesome.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./astronout.png" class="d-block w-100" alt="Cat">
+          <div class="carousel-caption d-none d-md-block">
+            <p style="color: white; font-family:Poppins;">Astronout playing baseketball with a Cat in Space 🤣
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./cat.png" class="d-block w-100" alt="Chimera">
+          <div class="carousel-caption d-none d-md-block">
+
+            <p style="color: white; font-family:Poppins;">A Cat Submarine Chimera.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 class="display-5-bold text-center mt-5">A Small Video</h1>
+
+    <!-- 3 Intro Video -->
+    <div id="video-container" class="d-flex justify-content-center mb-5 mt-1">
+      <video controls id="myvideo" controls controlsList="nodownload"
+        poster="https://c4.wallpaperflare.com/wallpaper/439/852/914/little-prince-universe-science-fiction-fantasy-art-wallpaper-preview.jpg">
+        <source src="./intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+
+    <div>Used Resources
+      <hr style="height:3px; width:170px; border-width:0; color:#ee6e73;; background-color:#f3d810;">
+
+      <a href="https://openai.com/dall-e-2/">DALL-E-2</a> -> Some of the images used were generated using
+      DALL-E-2
+      <br><br> Some of the images were taken from Google Images.
+    </div>
+    <div class="footer-div">Links
+      <hr style="height:3px; width:60px; border-width:0; color:#ee6e73;; background-color:#f3d810;">
+
+      <li> <a href="https://www.iitb.ac.in/" target="_blank">IIT Bombay</a></li>
+      <li><a href="https://www.cse.iitb.ac.in/" target="_blank"> CSE IITB</a></li>
+      <li><a href="https://google.co.in" target="_blank"> Google</a></li>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

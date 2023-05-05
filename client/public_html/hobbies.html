@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./iitb.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb45f868cd.js" crossorigin="anonymous"></script>
+    <style>
+        .hobbies-logo {
+            text-align: center;
+            width: 100%;
+            height: 80vh;
+            background: url("./hobbies.png");
+            background-position-x: center;
+            background-position-y: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        .hobbies-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #checkbox-container {
+            display: flex;
+        }
+
+        #checkbox {
+            margin: 0 10px 0 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type=checkbox] {
+            border: 0px;
+            width: 1rem;
+            height: 1em;
+            margin: 5px;
+        }
+
+        label {
+            font-family: Poppins, sans-serif;
+        }
+
+        #hobbies-card-container {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hobby-card {
+            text-align: center;
+            color: aliceblue;
+            border: #ee6e73 1px solid;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 300px;
+            height: 400px;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-weight: bold;
+            font-family: Poppins;
+            padding: 5px;
+            margin: 50px;
+            background-color: black;
+        }
+
+        .hobby-heading {
+            color: #ee6e73;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar material-navbar">
+        <div class="container-fluid">
+            <img src="./iitb.png" width="60" height="60" class="me-4" />
+            <!-- <h5 class="offcanvas-title">Abhishek Kumar Gupta</h5> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                <ul class="navbar-nav ms-md-auto gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html"><i
+                                class="fa-regular fa-lightbulb me-2"></i>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html"><i
+                                class="fa-solid fa-graduation-cap me-2"></i>Education</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="hobbies.html"><i class="fa-solid fa-guitar me-2"></i>Hobbies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html"><i class="fa-solid fa-comments me-2"></i>Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Education header -->
+    <div class="hobbies-logo">
+    </div>
+    <main class="hobbies-container">
+        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <h1 class="display-5-bold text-center mt-5">Hobbies</h1>
+            <hr style="height:3px; width:50%; border-width:0; color:#ee6e73;; background-color:#ee6e73;">
+        </div>
+        <blockquote class="blockquote">
+            <p>Choose the hobbies you want to know more about then click learn more.</p>
+        </blockquote>
+        <div id="checkbox-container">
+            <div id="checkbox">
+                <input class="hobbie-checkbox" value="pcgaming" type="checkbox">
+                <label>PC Gaming</label>
+            </div>
+            <div id="checkbox">
+                <input class="hobbie-checkbox" value="music" type="checkbox">
+                <label>Music</label>
+            </div>
+            <div id="checkbox">
+                <input class="hobbie-checkbox" value="webseries" type="checkbox">
+                <label>Web Series</label>
+            </div>
+            <div id="checkbox">
+                <input class="hobbie-checkbox" value="foodie" type="checkbox">
+                <label>Foodie</label>
+            </div>
+            <button id="checkbox" type="button" class="btn btn-primary" onclick="submitHobbies()">Learn more</button>
+        </div>
+        <div id="hobbies-card-container">
+        </div>
+    </main>
+
+    <!-- footer -->
+    <div class="footer mt-5">
+
+        <div>Used Resources
+            <hr style="height:3px; width:170px; border-width:0; color:#ee6e73;; background-color:#f3d810;">
+
+            <a href="https://openai.com/dall-e-2/">DALL-E-2</a> -> Some of the images used were generated using
+            DALL-E-2
+            <br><br> Some of the images were taken from Google Images.
+        </div>
+        <div class="footer-div">Links
+            <hr style="height:3px; width:60px; border-width:0; color:#ee6e73;; background-color:#f3d810;">
+
+            <li> <a href="https://www.iitb.ac.in/" target="_blank">IIT Bombay</a></li>
+            <li><a href="https://www.cse.iitb.ac.in/" target="_blank"> CSE IITB</a></li>
+            <li><a href="https://google.co.in" target="_blank"> Google</a></li>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
